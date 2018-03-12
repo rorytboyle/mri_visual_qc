@@ -1,5 +1,8 @@
 % Function loops through .nii files, displays each file individually in
 % mricron and stores a user rating of image quality.
+%
+% files must be a cell array of .nii filenames (with full pathnames) or else
+% a folder containing only .nii files
 % 
 % Users can then quickly scroll through the loaded image in mricron.
 % After each image is displayed in mricron, the loop does not continue
@@ -13,14 +16,8 @@
 % containing: qc_array (filenames and ratings (Bad/Unsure/Good)), score
 % (numerical rating values), and last_file_rated (name of the last file
 % rated)
-%
-% NOTE: If user terminates function with ctrl+c, user ratings will not be
-% saved
 
 function [qc_array, score] = qc_mricron(files)
-
-% handle inputs and verify inputs are ok
-
 
 % read in mricron location
 if ispc
