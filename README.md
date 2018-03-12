@@ -22,3 +22,4 @@ I would welcome any feedback or suggestions and please let me know if you notice
         b) Specify output folder
         c) Create new folder containing only usable and/or unsure images - could be memory intensive if a lot of files are qc'd
 4) Specify location of mricron app on pc screen (may not be possible?)
+5) Clean and tidy code
