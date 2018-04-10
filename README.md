@@ -14,6 +14,9 @@ This function currently only works for Windows as it uses dos commands to open a
 
 I would welcome any feedback or suggestions and please let me know if you notice any errors/issues
 
+# Noted erros
+1) Does not work with MATLAB 2015 as the struct read in by this MATLAB version does not contain a field for folder and as such the function is unable to load up the image in mricron, to adapt it for earlier versions of matlab add the folder name to the file name --> does work on MATLAB 2017b
+
 # To-do list
 1) Fully test for errors
 2) Make function usable on mac & linux
