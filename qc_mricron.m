@@ -123,7 +123,7 @@ for i=1:length(files)
    end
    % close mricron on windows pc
    if ispc==1
-       [~, ~] = dos('taskkill /F /IM mricron.exe');
+       [~, ~] = dos('taskkill /F /IM mricron.exe /IM cmd.exe');
    else
        fprintf('\n ***** Close MRIcron after each image! *****\n \n') % ADD command to close program on unix/mac os once found here
    end
